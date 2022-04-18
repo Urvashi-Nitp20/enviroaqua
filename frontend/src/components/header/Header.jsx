@@ -13,30 +13,33 @@ const Header = () => {
         <Link to="/main">Main</Link>
         <Link to="/plots">Plots</Link> */}
       <nav className="nav-container">
-        <div className="logo">EA</div>
+        <div className="logo">EnviroAqua</div>
         <div className="icons-cont">
-          <Link to={"/alerts"}>
+          <Link to={"/alerts"} className="navlink">
             <IoMdNotificationsOutline className="icon" />
           </Link>
-          <Link to={"/logout"}>
+          <Link to={"/logout"} className="navlink">
             <HiOutlineLogout className="icon" />
           </Link>
         </div>
       </nav>
       <div className="long-nav">
-        <Link to={"/main"}>
-          <RiAppsLine className="icon" />
+        <div className="long-nav-up">
+          <Link to={"/main"}>
+          <RiAppsLine className="icon" title="App" />
         </Link>
         <Link to={"/dashboard"}>
-          <RiDashboardLine className="icon" />
+          <RiDashboardLine className="icon" title="DashBoard" />
         </Link>
         <Link to={"/plots"}>
-          <GoGraph className="icon" />
+          <GoGraph className="icon" title="Plots"/>
         </Link>
-
-        <Link to={"/logout"}>
-          <HiOutlineLogout className="icon" />
-        </Link>
+        </div>
+       <div className="long-nav-down">
+          <Link to={"/logout"}>
+          <HiOutlineLogout className="icon" title="LogOut" />
+          </Link>
+       </div>
       </div>
     </div>
   );
