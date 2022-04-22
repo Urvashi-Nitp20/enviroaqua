@@ -205,7 +205,7 @@ Go sustainable  <span class="red-text"> to water for us.</span>
             <i class="fab fa-slack fa-2x"></i>
           </div>
         </div>
-        <div class="foot">© 2021 WebLime, Inc. All rights reserved.</div>
+        <div class="foot">© 2022 Enviroaqua, Inc. All rights reserved.</div>
       </main>
     </div>
   );

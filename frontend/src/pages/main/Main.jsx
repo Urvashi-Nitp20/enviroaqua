@@ -39,6 +39,49 @@ const Main = () => {
     },
   ];
 
+ const waterdata = [
+  {
+    location: "Patna City",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "Patliputra",
+    Demand: "0.8",
+    Supply: "0.8",
+  },
+  {
+    location: "Kankarbagh",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+  {
+    location: "Mahendru",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "Boring road",
+    Demand: "1",
+    Supply: "0.8",
+  },
+  {
+    location: "Barh",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+  {
+    location: "Bihta",
+    Demand: "1.7",
+    Supply: "1.1",
+  },
+  {
+    location: "Danapur",
+    Demand: "1.4",
+    Supply: "1.0", 
+  }
+  ]
+
   return (
     <div className="main-container">
       <Header />
@@ -52,7 +95,7 @@ const Main = () => {
             <form>
               <label htmlFor="location">Choose location:</label>
               <select name="location" id="location">
-                {Waterdata.map((data, index) => (
+                {waterdata.map((data, index) => (
                   <option value={data.location} key={index}>
                     {data.location}
                   </option>
@@ -147,7 +190,7 @@ const Main = () => {
               amount. So, if you see any tap open or water wastage happening
               near you, be sure to solve that problem and work towards saving
               more water and be a more responsible Patniate.
-              
+
               Thankyou
               Team EnviroAqua
             </textarea>
