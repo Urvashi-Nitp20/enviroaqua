@@ -3,42 +3,42 @@ import Header from "../../components/header/Header";
 import "./Main.css";
 import { FaWater , FaHandHoldingWater } from "react-icons/fa"
 import {IoMdWater} from "react-icons/io"
-
-
 import ChartLine from "../../components/chart/Chart";
+
+
 const Main = () => {
   const Waterdata = [
-    {
-      location: "NIT",
-      demand: "1",
-      supply: "0.7",
-    },
-    {
-      location: "AIIMS",
-      demand: "0.8",
-      supply: "0.8",
-    },
-    {
-      location: "IIT",
-      demand: "1.2",
-      supply: "1.4",
-    },
-    {
-      location: "NIT",
-      demand: "1",
-      supply: "0.7",
-    },
-    {
-      location: "AIIMS",
-      demand: "1",
-      supply: "0.8",
-    },
-    {
-      location: "IIT",
-      demand: "1.2",
-      supply: "1.4",
-    },
-  ];
+  {
+    location: "January",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "february",
+    Demand: "0.8",
+    Supply: "0.8",
+  },
+  {
+    location: "March",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+  {
+    location: "April",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "May",
+    Demand: "1",
+    Supply: "0.8",
+  },
+  {
+    location: "June",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+];
 
   return (
     <div className="main-container">
@@ -133,7 +133,7 @@ const Main = () => {
 
         <div className="mid-foot">
           <div className="left">
-            <ChartLine />
+            <ChartLine Waterdata={Waterdata} width={600} height={300}/>
           </div>
           <div className="right">
             <label htmlFor="text">Mail Template</label>
