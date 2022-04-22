@@ -1,44 +1,86 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import "./Main.css";
-import { FaWater , FaHandHoldingWater } from "react-icons/fa"
-import {IoMdWater} from "react-icons/io"
-
-
+import { FaWater, FaHandHoldingWater } from "react-icons/fa";
+import { IoMdWater } from "react-icons/io";
 import ChartLine from "../../components/chart/Chart";
+
 const Main = () => {
   const Waterdata = [
     {
-      location: "NIT",
-      demand: "1",
-      supply: "0.7",
+      location: "January",
+      Demand: "1",
+      Supply: "0.7",
     },
     {
-      location: "AIIMS",
-      demand: "0.8",
-      supply: "0.8",
+      location: "february",
+      Demand: "0.8",
+      Supply: "0.8",
     },
     {
-      location: "IIT",
-      demand: "1.2",
-      supply: "1.4",
+      location: "March",
+      Demand: "1.2",
+      Supply: "1.4",
     },
     {
-      location: "NIT",
-      demand: "1",
-      supply: "0.7",
+      location: "April",
+      Demand: "1",
+      Supply: "0.7",
     },
     {
-      location: "AIIMS",
-      demand: "1",
-      supply: "0.8",
+      location: "May",
+      Demand: "1",
+      Supply: "0.8",
     },
     {
-      location: "IIT",
-      demand: "1.2",
-      supply: "1.4",
+      location: "June",
+      Demand: "1.2",
+      Supply: "1.4",
     },
   ];
+
+ const waterdata = [
+  {
+    location: "Patna City",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "Patliputra",
+    Demand: "0.8",
+    Supply: "0.8",
+  },
+  {
+    location: "Kankarbagh",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+  {
+    location: "Mahendru",
+    Demand: "1",
+    Supply: "0.7",
+  },
+  {
+    location: "Boring road",
+    Demand: "1",
+    Supply: "0.8",
+  },
+  {
+    location: "Barh",
+    Demand: "1.2",
+    Supply: "1.4",
+  },
+  {
+    location: "Bihta",
+    Demand: "1.7",
+    Supply: "1.1",
+  },
+  {
+    location: "Danapur",
+    Demand: "1.4",
+    Supply: "1.0", 
+  }
+  ]
 
   return (
     <div className="main-container">
@@ -53,7 +95,7 @@ const Main = () => {
             <form>
               <label htmlFor="location">Choose location:</label>
               <select name="location" id="location">
-                {Waterdata.map((data, index) => (
+                {waterdata.map((data, index) => (
                   <option value={data.location} key={index}>
                     {data.location}
                   </option>
@@ -96,7 +138,7 @@ const Main = () => {
 
           <div className="data-card">
             <div className="icon">
-              <FaWater className="fa-icon"/>
+              <FaWater className="fa-icon" />
             </div>
             <div className="card-text">
               <div className="data">
@@ -108,7 +150,7 @@ const Main = () => {
 
           <div className="data-card">
             <div className="icon">
-              <FaHandHoldingWater className="fa-icon"/>
+              <FaHandHoldingWater className="fa-icon" />
             </div>
             <div className="card-text">
               <div className="data">
@@ -120,7 +162,7 @@ const Main = () => {
 
           <div className="data-card">
             <div className="icon">
-              <IoMdWater className="fa-icon"/>
+              <IoMdWater className="fa-icon" />
             </div>
             <div className="card-text">
               <div className="data">
@@ -133,26 +175,31 @@ const Main = () => {
 
         <div className="mid-foot">
           <div className="left">
-            <ChartLine />
+            <ChartLine Waterdata={Waterdata} width={600} height={300} />
           </div>
           <div className="right">
             <label htmlFor="text">Mail Template</label>
             <br />
             <textarea name="text" id="mail" cols="30" rows="10">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, rem praesentium placeat tempora minus, obcaecati aut
-              magnam consequatur nulla modi temporibus error? Blanditiis eum
-              molestias quidem corporis sint voluptatem ducimus quibusdam esse,
-              dignissimos, fugiat animi deserunt a culpa beatae voluptatibus
-              vitae magnam itaque alias id ipsa rerum obcaecati sunt.
-              Distinctio!
+              Hello Patanite,
+
+              We wish you a very happy and prosperous day. We
+              are from EnviroAqua working towards stopping water wastage and
+              water equidistribution in our area. We want to share to you that,
+              today your area have used more water than the always specified
+              amount. So, if you see any tap open or water wastage happening
+              near you, be sure to solve that problem and work towards saving
+              more water and be a more responsible Patniate.
+
+              Thankyou
+              Team EnviroAqua
             </textarea>
           </div>
         </div>
 
         <div className="bottom">
           <label for="points">Varying Water Supply(between 0 and 10):</label>
-          <input type="range" id="points" name="points" min="-10" max="10"/>
+          <input type="range" id="points" name="points" min="-10" max="10" />
         </div>
       </div>
     </div>

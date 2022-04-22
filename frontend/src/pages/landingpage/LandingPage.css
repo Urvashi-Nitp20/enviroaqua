@@ -238,6 +238,9 @@ td{
 .textt3{
     font-weight: 500;
     margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0 2rem;
 }
 .space2{
     height: 3rem;
@@ -421,4 +424,19 @@ cursor: pointer;
         width: 70%;
         margin-top: 1rem;
     }
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+form input{
+    height: 2.5rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(0, 138, 192);
+    margin-top: 0.6rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
 }
