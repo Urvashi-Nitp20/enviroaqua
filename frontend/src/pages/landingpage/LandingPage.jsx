@@ -191,12 +191,12 @@ const LandingPage = () => {
 
         <div class="purchase-box">
           <div class="space2"></div>
-          <h1 class="textt4">$5</h1>
-          <h4 class="textt3">Lifetime License</h4>
+          {/* <h1 class="textt4">$5</h1> */}
+          <h4 class="textt3">Wanna Save Water?</h4>
           <hr noshade />
           <h4 class="textt3">Use for personal or your clients</h4>
           <h4 class="textt3">Access to updates and future realeases</h4>
-          <button class="final-purchase">Purchase Now</button>
+          <button class="final-purchase">Get Started</button>
         </div>
 
         <div class="social">
