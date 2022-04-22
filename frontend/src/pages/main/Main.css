@@ -24,14 +24,43 @@
 }
 
 .data-card{
-    max-width: 15rem;
+    max-width: 20rem;
     background-color: white;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;   
-    padding: 2rem 3.5rem;     
+    padding: 2rem 3rem;     
 }
 
 .card-text{
    margin-left: 2rem; 
+}
+
+
+.mid-foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.mid-foot .left{
+    padding-top: 1rem;
+    background-color: white;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.mid-foot .right textarea{
+  height: auto;
+  height: 17rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+  padding: 0.5rem;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
 }

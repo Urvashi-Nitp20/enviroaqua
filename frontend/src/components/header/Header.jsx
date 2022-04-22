@@ -13,7 +13,7 @@ const Header = () => {
         <Link to="/main">Main</Link>
         <Link to="/plots">Plots</Link> */}
       <nav className="nav-container">
-        <div className="logo">EnviroAqua</div>
+        <div className="logog"><Link to="/" className="logo-link">EnviroAqua</Link></div>
         <div className="icons-cont">
           <Link to={"/alerts"} className="navlink">
             <IoMdNotificationsOutline className="icon" />

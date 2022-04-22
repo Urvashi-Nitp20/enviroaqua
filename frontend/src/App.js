@@ -6,6 +6,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Main from "./pages/main/Main";
 import Header from "./components/header/Header";
 import Plots from "./pages/plots/Plots";
+import LandingPage from "./pages/landingpage/LandingPage";
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
           path="/"
           element={
             <>
-              <NavBar />
-              <Footer />
-              <Link to="/dashboard">Dashboard</Link>
+              <LandingPage/>
             </>
           }
         />
