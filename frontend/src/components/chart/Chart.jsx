@@ -1,77 +1,50 @@
-import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-const data = [
+import { LineChart, Line, CartesianGrid, XAxis, YAxis,Tooltip,
+  Legend } from 'recharts';
+const Waterdata = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    location: "NIT",
+    demand: "1",
+    supply: "0.7",
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    location: "AIIMS",
+    demand: "0.8",
+    supply: "0.8",
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    location: "IIT",
+    demand: "1.2",
+    supply: "1.4",
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    location: "NIT",
+    demand: "1",
+    supply: "0.7",
   },
   {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    location: "AIIMS",
+    demand: "1",
+    supply: "0.8",
   },
   {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    location: "IIT",
+    demand: "1.2",
+    supply: "1.4",
   },
 ];
 
-export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
 
-  render() {
-    return (
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-        </LineChart>
-      </ResponsiveContainer>
-    );
-  }
+
+export default function ChartLine() {
+  return (<LineChart width={600} height={300} data={Waterdata} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+    <Tooltip />
+      <Legend />
+    <Line type="monotone" dataKey="demand" stroke="#8884d8" />
+    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+    <Line type="monotone" dataKey="supply" stroke="#82ca9d" />
+ 
+    <XAxis dataKey="location" />
+    <YAxis  />
+  </LineChart>);
+  
 }
