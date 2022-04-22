@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import "./Main.css";
 
+import ChartLine from "../../components/chart/Chart";
 const Main = () => {
   const Waterdata = [
     {
@@ -175,6 +176,7 @@ const Main = () => {
             </div>
           </div>
         </div>
+        <ChartLine/>
       </div>
     </div>
   );
