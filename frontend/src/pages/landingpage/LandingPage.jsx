@@ -51,7 +51,7 @@ const LandingPage = () => {
                   <button class="drop-btn"> Documentation</button>
                   <div class="dropdown-content">
                     <a href="#">Getting started</a>
-                    <a href="#">Why use Enviroaqua?</a>
+                    <a href="#">Why Enviroaqua?</a>
                     <a href="#">How to use?</a>
                   </div>
                 </div>
@@ -95,16 +95,15 @@ const LandingPage = () => {
       <div class="page1">
         <div class="page1-left">
           <h1 class="headline">
-            Meet your new<span class="red-text"> favorite them</span>
+Go sustainable  <span class="red-text"> to water for us.</span>
           </h1>
           <p class="headline-intro">
-            Build a beautiful, modern website with TailwindCSS and pre-made
-            pages built from scratch.
+            Enviroaqua ensures proper distribution of water available on earth for the usage by each and every person in present time as well as in future.
           </p>
 
           <div class="buttons">
             <div>
-              <button class="purchase">Purchase Domain</button>
+              <button class="purchase">Dashboard</button>
             </div>
             <div>
               <button class="learn-more">Learn more</button>
@@ -120,31 +119,23 @@ const LandingPage = () => {
         <div class="cards ">
           <div class="page2-item card1">
             <img src="img/creative-draft.svg" alt="" class="svg1" />
-            <h2 class="text-line1">Unleash your creativity</h2>
+            <h2 class="text-line1">Need of Enviroaqua</h2>
             <h3 class="text-line2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              pariatur beatae accusantium nesciunt quisquam adipisci amet
-              aperiam expedita maiores, voluptates consequatur, iure temporibus
-              eum inventore.
+            Responsible water use is essential in the current situation.As our core idea is about data, so let us look at data :).Fresh water withdrawals have increased six-fold since the beginning of the 20th century, raising the question of whether we are using the water that we have sustainably.
             </h3>
           </div>
           <div class="page2-item card2">
             <img src="img/accept-tasks.svg" alt="" class="svg1" />
-            <h2 class="text-line1">Get more results</h2>
+            <h2 class="text-line1">What is Enviroaqua</h2>
             <h3 class="text-line2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, hic.
-              Ducimus quam ut ea eius recusandae fuga sit amet iusto id,
-              sapiente ad similique ex.
+             Enviroaqua is an initiative to implement what we are taught a thousands time theoritically i.e sustainable usage of water, water wastage , water conservation and what not.On analyzing data on water usage, we get to know where usage of water limit exceeds,automated warning is generated.
             </h3>
           </div>
           <div class="page2-item card3">
             <img src="img/growth-curve.svg" alt="" class="svg1" />
-            <h2 class="text-line1">Grow your brand</h2>
+            <h2 class="text-line1">Show Support</h2>
             <h3 class="text-line2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Repellendus ab numquam eveniet repellat aperiam, aliquam facere
-              officiis omnis facilis aspernatur et praesentium ratione quasi
-              odio.
+             We are obliged to join our hands for betterment of enviromental issues otherwise we can't predict the misrey on earth. 
             </h3>
           </div>
         </div>
@@ -156,28 +147,26 @@ const LandingPage = () => {
           </div>
           <div class="exp-right">
             <h3 class="exp-head">
-              Real time updates and activity demographics
+              Our Acheivements
             </h3>
             <h3 class="headline-intro demo-text1">
-              I don't know what to type here so let me fill some random text.
-              Lorem ipsum is hard to consume and I use it as a last resort. So,
-              I'll fill random text please and you don't even have to read it.
+             We are appreciated by corporations and various communities for our work. Many state government has sponsored us for our contribution for betterment of our environment.
             </h3>
             <h3 class="headline-intro demo-text2">
-              I don't know what to type here so let me fill some random text.
+              We have saved 100 gallons of water to be wasted till now.
             </h3>
           </div>
         </div>
 
         <div class="purchase-red">
           <div class="purchase-text">
-            <h1 class="purchase-h1">Let us make it easy for you</h1>
+            <h1 class="purchase-h1">Let us make our earth Blue again</h1>
             <h3 class="purchase-h3">
-              Build modern looking websites with Tailmars
+             Increasing scarcity of water have raised question on Earth being called "Blue"
             </h3>
           </div>
           <div class="purchase-buttt">
-            <button class="final-purchase">Purchase Now!</button>
+            <button class="final-purchase">Dashboard!</button>
           </div>
         </div>
 
